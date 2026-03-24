@@ -1,215 +1,87 @@
 <!DOCTYPE html>
-<html lang="sv">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Skräddarsydda industrihallar, lagerhallar och eventlösningar i Dalarna och hela Sverige. Hög kvalitet, korta leveranstider och flexibla hyresavtal från Back & Matsson Gruppen AB.">
-    <title>Back & Matsson Gruppen AB | Industrihallar & Lagerhallar att Hyra eller Köpa</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        brand: {
-                            blue: '#1e3a8a', // Deep industrial blue
-                            light: '#e2e8f0', // Steel grey
-                            accent: '#2563eb', // CTA Blue
-                        }
-                    }
-                }
-            }
+    <title>Industrial Halls</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to right, #434343, #000000);
+            color: #ffffff;
+            animation: fadeIn 2s ease-in;
         }
-    </script>
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        header {
+            text-align: center;
+            padding: 50px;
+        }
+
+        h1 {
+            font-size: 3em;
+            margin-bottom: 0.5em;
+        }
+
+        p {
+            font-size: 1.5em;
+            margin-bottom: 1em;
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .image {
+            width: calc(33% - 20px);
+            margin: 10px;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+
+        .image:hover {
+            transform: scale(1.05);
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            font-size: 0.8em;
+        }
+    </style>
 </head>
-<body class="bg-slate-50 text-slate-900 font-sans antialiased">
-
-    <header class="bg-white shadow-sm sticky top-0 z-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
-            <div class="text-2xl font-bold text-brand-blue tracking-tighter">BACK & MATSSON</div>
-            <nav class="hidden md:flex space-x-8 font-medium text-slate-600">
-                <a href="#tjanster" class="hover:text-brand-accent">Våra Hallar</a>
-                <a href="#kopa-hyra" class="hover:text-brand-accent">Köpa vs Hyra</a>
-                <a href="#om-oss" class="hover:text-brand-accent">Om oss & Referenser</a>
-            </nav>
-            <a href="#offert" class="bg-brand-accent hover:bg-blue-700 text-white px-5 py-2 rounded-md font-semibold transition">Få en offert</a>
-        </div>
+<body>
+    <header>
+        <h1>Welcome to the Industrial Halls Gallery</h1>
+        <p>Explore our collection of warehouses and industrial events.</p>
     </header>
-
-    <section class="bg-slate-900 text-white py-20 lg:py-32 relative overflow-hidden">
-        <div class="absolute inset-0 opacity-20 bg-[url('https://placehold.co/1920x1080/1e293b/ffffff?text=Industrial+Background')] bg-cover bg-center"></div>
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <div class="md:w-2/3">
-                <span class="text-blue-400 font-semibold tracking-wider uppercase text-sm mb-4 block">Hög kvalitet och korta leveranstider</span>
-                <h1 class="text-5xl md:text-6xl font-extrabold mb-6 leading-tight">Skräddarsydda Hallar för Din Verksamhet</h1>
-                <p class="text-xl text-slate-300 mb-8">Från offert till färdig hall – vi sköter hela processen. Oavsett längd, bredd eller material levererar vi lösningar för industri, lager och event i hela Sverige.</p>
-                <div class="flex flex-col sm:flex-row gap-4">
-                    <a href="#offert" class="bg-brand-accent hover:bg-blue-500 text-white text-center px-8 py-4 rounded-md font-bold text-lg transition">Få en offert idag</a>
-                    <a href="#kalkylator" class="bg-transparent border-2 border-slate-400 hover:border-white text-white text-center px-8 py-4 rounded-md font-bold text-lg transition">Testa vår priskalkylator</a>
-                </div>
-                <div class="mt-8 flex items-center space-x-4 text-sm text-slate-400 font-medium">
-                    <span class="flex items-center"><svg class="w-5 h-5 mr-2 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Över 5 års erfarenhet</span>
-                    <span class="flex items-center"><svg class="w-5 h-5 mr-2 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Certifierade montörer</span>
-                </div>
-            </div>
+    <div class="image-container">
+        <div class="image">
+            <img src="https://images.unsplash.com/photo-1555621680-436eeb4df8fb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTc3M3wwfDF8c2VhcmNofDE5fHxpbmR1c3RyaWFsJTIwaGFsbHxlbnwwfHx8fDE2MTM5Nzg5NjE&ixlib=rb-1.2.1&q=80&w=400" alt="Industrial Hall">
         </div>
-    </section>
-
-    <section id="tjanster" class="py-20 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Våra Lösningar</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="bg-slate-50 rounded-lg p-8 border border-slate-200 hover:shadow-lg transition">
-                    <h3 class="text-2xl font-bold mb-4 text-brand-blue">Industrihallar</h3>
-                    <p class="text-slate-600 mb-6">Robusta stålhallar anpassade för tung produktion. Isolerade lösningar som möter de högsta kraven på arbetsmiljö och säkerhet.</p>
-                    <a href="#offert" class="text-brand-accent font-semibold hover:underline">Läs mer &rarr;</a>
-                </div>
-                <div class="bg-slate-50 rounded-lg p-8 border border-slate-200 hover:shadow-lg transition">
-                    <h3 class="text-2xl font-bold mb-4 text-brand-blue">Lagerhallar (PVC & Limträ)</h3>
-                    <p class="text-slate-600 mb-6">Snabba, flexibla och väderskyddade PVC-hallar eller estetiska limträlösningar. Perfekt för omedelbara lagringsbehov.</p>
-                    <a href="#offert" class="text-brand-accent font-semibold hover:underline">Läs mer &rarr;</a>
-                </div>
-                <div class="bg-slate-50 rounded-lg p-8 border border-slate-200 hover:shadow-lg transition">
-                    <h3 class="text-2xl font-bold mb-4 text-brand-blue">Eventlösningar</h3>
-                    <p class="text-slate-600 mb-6">Stora, vita och inbjudande eventtält av högsta kvalitet. Snabbt montage och nertagning för företagsevent och mässor.</p>
-                    <a href="#offert" class="text-brand-accent font-semibold hover:underline">Läs mer &rarr;</a>
-                </div>
-            </div>
+        <div class="image">
+            <img src="https://images.unsplash.com/photo-1587445645382-2522b227757c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTc3M3wwfDF8c2VhcmNofDV8fHdhcmVob3VzZXxlbnwwfHx8fDE2MTM5Nzg5NjE&ixlib=rb-1.2.1&q=80&w=400" alt="Warehouse">
         </div>
-    </section>
-
-    <section id="kalkylator" class="py-20 bg-brand-light">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex flex-col lg:flex-row gap-16">
-                
-                <div class="lg:w-1/2 bg-white p-8 rounded-lg shadow-md">
-                    <h3 class="text-2xl font-bold mb-2">Priskalkylator</h3>
-                    <p class="text-slate-600 mb-6">Få en snabb uppskattning på din nya hall.</p>
-                    
-                    <div class="space-y-4">
-                        <div>
-                            <label class="block text-sm font-medium text-slate-700 mb-1">Längd (meter)</label>
-                            <input type="number" id="calc-length" class="w-full border border-slate-300 rounded-md p-2" placeholder="T.ex. 30">
-                        </div>
-                        <div>
-                            <label class="block text-sm font-medium text-slate-700 mb-1">Bredd (meter)</label>
-                            <input type="number" id="calc-width" class="w-full border border-slate-300 rounded-md p-2" placeholder="T.ex. 15">
-                        </div>
-                        <div>
-                            <label class="block text-sm font-medium text-slate-700 mb-1">Höjd (meter)</label>
-                            <input type="number" id="calc-height" class="w-full border border-slate-300 rounded-md p-2" placeholder="T.ex. 5">
-                        </div>
-                        <button onclick="calculateEstimation()" class="w-full bg-slate-900 text-white font-bold py-3 rounded-md hover:bg-slate-800 transition">Beräkna pris</button>
-                    </div>
-
-                    <div id="calc-result" class="hidden mt-6 p-4 bg-blue-50 border border-blue-200 rounded-md">
-                        <p class="text-sm text-slate-600">Uppskattat från-pris (exkl. markarbete):</p>
-                        <p class="text-3xl font-bold text-brand-blue" id="calc-price">0 SEK</p>
-                        <p class="text-xs text-slate-500 mt-2">*Detta är en grov uppskattning. Kontakta oss för en exakt offert.</p>
-                    </div>
-                </div>
-
-                <div class="lg:w-1/2 flex flex-col justify-center" id="kopa-hyra">
-                    <h2 class="text-3xl font-bold mb-6">Köpa eller Hyra? Vi ger dig valet.</h2>
-                    <div class="space-y-6">
-                        <div>
-                            <h4 class="text-xl font-bold text-brand-blue mb-2">Fördelar med att hyra/leasa</h4>
-                            <p class="text-slate-600">Behåll din likviditet och anpassa dina kostnader efter aktuellt behov. Att hyra en hall ger dig maximal flexibilitet om dina platsbehov förändras. Fullt avdragsgillt och ingen tung investering krävs direkt.</p>
-                        </div>
-                        <div>
-                            <h4 class="text-xl font-bold text-brand-blue mb-2">Fördelar med att köpa</h4>
-                            <p class="text-slate-600">För den långsiktiga aktören. Äg din infrastruktur från dag ett och minska dina löpande månadskostnader på sikt. En investering som höjer värdet på din fastighet.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="image">
+            <img src="https://images.unsplash.com/photo-1597942372436-e05896de7e93?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTc3M3wwfDF8c2VhcmNofDExfHxldmVudC1oaWdlJTIwaGFsbHxlbnwwfHx8fDE2MTM5Nzg5NjE&ixlib=rb-1.2.1&q=80&w=400" alt="Event Hall">
         </div>
-    </section>
-
-    <section id="om-oss" class="py-20 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-3xl mx-auto mb-16">
-                <h2 class="text-3xl font-bold mb-4">Om Back & Matsson Gruppen AB</h2>
-                <p class="text-lg text-slate-600">Vi är ett dedikerat team på över 10 medarbetare med stark förankring i Dalarna, men vårt arbetsfält sträcker sig över hela Sverige. Med ett brett nätverk av partners löser vi allt från markarbete till nyckelfärdig hall.</p>
-            </div>
-
-            <h3 class="text-2xl font-bold text-center mb-8">Utvalda Referensprojekt</h3>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div class="bg-slate-100 p-6 rounded-lg border-l-4 border-brand-accent">
-                    <h4 class="font-bold text-lg">Batterifabriken i Göteborg</h4>
-                    <p class="text-slate-600 mt-2">Leverans och montage av en 2000 kvm isolerad stålhall anpassad för känslig produktionsutrustning. Färdigställd 3 veckor före deadline.</p>
-                </div>
-                <div class="bg-slate-100 p-6 rounded-lg border-l-4 border-brand-accent">
-                    <h4 class="font-bold text-lg">Sundqvist Åkeri</h4>
-                    <p class="text-slate-600 mt-2">Skräddarsydd PVC-hall för väderskyddad omlastning av gods. Ett flexibelt hyresavtal som tillåter framtida expansion.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="offert" class="py-20 bg-slate-900 text-white">
-        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-10">
-                <h2 class="text-3xl font-bold mb-4">Redo att bygga framtiden?</h2>
-                <p class="text-slate-300">Fyll i formuläret nedan så återkommer vi med ett lösningsförslag och offert inom 24 timmar.</p>
-            </div>
-            
-            <form class="bg-white text-slate-900 p-8 rounded-lg shadow-xl" onsubmit="event.preventDefault(); alert('Tack! Din förfrågan har skickats.');">
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-                    <div>
-                        <label class="block text-sm font-medium mb-1" for="name">Namn / Företag</label>
-                        <input type="text" id="name" required class="w-full border border-slate-300 rounded-md p-3">
-                    </div>
-                    <div>
-                        <label class="block text-sm font-medium mb-1" for="email">E-post</label>
-                        <input type="email" id="email" required class="w-full border border-slate-300 rounded-md p-3">
-                    </div>
-                </div>
-                <div class="mb-6">
-                    <label class="block text-sm font-medium mb-1" for="interest">Jag är intresserad av</label>
-                    <select id="interest" class="w-full border border-slate-300 rounded-md p-3">
-                        <option>Industrihall (Köpa/Hyra)</option>
-                        <option>Lagerhall (PVC/Limträ)</option>
-                        <option>Eventlösning</option>
-                        <option>Allmän förfrågan</option>
-                    </select>
-                </div>
-                <div class="mb-6">
-                    <label class="block text-sm font-medium mb-1" for="message">Beskriv ditt behov (valfritt)</label>
-                    <textarea id="message" rows="4" class="w-full border border-slate-300 rounded-md p-3" placeholder="T.ex. önskade mått, material eller tidsram..."></textarea>
-                </div>
-                <button type="submit" class="w-full bg-brand-accent hover:bg-blue-600 text-white font-bold py-4 rounded-md text-lg transition">Skicka Förfrågan</button>
-            </form>
-        </div>
-    </section>
-
-    <script>
-        function calculateEstimation() {
-            const length = parseFloat(document.getElementById('calc-length').value);
-            const width = parseFloat(document.getElementById('calc-width').value);
-            // Height could be used for volume modifiers, but we keep it simple for base SQM.
-            
-            if(isNaN(length) || isNaN(width) || length <= 0 || width <= 0) {
-                alert("Vänligen fyll i giltiga mått för längd och bredd.");
-                return;
-            }
-
-            // Simple estimation logic for demonstration (Base cost per SQM)
-            const area = length * width;
-            let baseSqmPrice = 2500; // SEK per KVM as a mock baseline for a standard hall
-            
-            // Volume discount logic
-            if (area > 500) baseSqmPrice = 2100;
-            if (area > 1000) baseSqmPrice = 1800;
-
-            const estimatedTotal = area * baseSqmPrice;
-            
-            // Format to Swedish currency locale
-            const formattedPrice = new Intl.NumberFormat('sv-SE', { style: 'currency', currency: 'SEK', maximumFractionDigits: 0 }).format(estimatedTotal);
-            
-            document.getElementById('calc-price').innerText = formattedPrice;
-            document.getElementById('calc-result').classList.remove('hidden');
-        }
-    </script>
+    </div>
+    <footer>
+        <p>&copy; 2026 Industrial Halls. All rights reserved.</p>
+    </footer>
 </body>
 </html>
