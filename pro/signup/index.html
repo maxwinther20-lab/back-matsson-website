@@ -3,119 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Professional Redesign of Signup Page</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background: #007BFF;
-            color: white;
-            padding: 10px 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        nav a {
-            color: white;
-            margin: 0 10px;
-            text-decoration: none;
-        }
-        .hero {
-            background: linear-gradient(to right, #4e54c8, #8f94fb);
-            color: white;
-            padding: 100px 20px;
-            text-align: center;
-        }
-        .services {
-            display: flex;
-            justify-content: space-around;
-            padding: 50px 20px;
-        }
-        .service-card {
-            background: white;
-            border-radius: 8px;
-            padding: 20px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            width: 30%;
-        }
-        .gallery {
-            display: flex;
-            justify-content: space-around;
-            padding: 50px 20px;
-        }
-        .gallery img {
-            width: 30%;
-            border-radius: 8px;
-        }
-        .contact {
-            background: #00008B;
-            color: white;
-            padding: 50px 20px;
-            text-align: center;
-        }
-        .contact form {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        .contact input, .contact textarea {
-            margin: 10px;
-            padding: 10px;
-            width: 80%;
-        }
-        .contact button {
-            padding: 10px 20px;
-            background: #FFA500;
-            border: none;
-            color: white;
-            cursor: pointer;
-        }
-    </style>
+    <title>Signup Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
-    <header>
-        <div class="logo">Logo</div>
-        <nav>
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Services</a>
-            <a href="#">Contact</a>
-        </nav>
-    </header>
-    <section class="hero">
-        <h1>Welcome to Our Services</h1>
-        <p>Your success starts here.</p>
-    </section>
-    <section class="services">
-        <div class="service-card">
-            <h2>Service 1</h2>
-            <p>Description of service 1.</p>
-        </div>
-        <div class="service-card">
-            <h2>Service 2</h2>
-            <p>Description of service 2.</p>
-        </div>
-        <div class="service-card">
-            <h2>Service 3</h2>
-            <p>Description of service 3.</p>
+<body class="bg-gray-100">
+    <!-- Hero Section -->
+    <section class="relative h-screen">
+        <img src="https://source.unsplash.com/featured/?industrial" alt="Industrial Background" class="absolute inset-0 object-cover w-full h-full">
+        <div class="flex items-center justify-center h-full bg-black bg-opacity-50">
+            <h1 class="text-5xl font-bold text-white">Welcome to Our Website</h1>
         </div>
     </section>
-    <section class="gallery">
-        <img src="https://source.unsplash.com/300x200/?industrial,1" alt="Industrial Image 1">
-        <img src="https://source.unsplash.com/300x200/?industrial,2" alt="Industrial Image 2">
-        <img src="https://source.unsplash.com/300x200/?industrial,3" alt="Industrial Image 3">
+
+    <!-- Services Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold">Our Services</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
+                <div class="bg-gray-200 p-5 rounded shadow-md">
+                    <img src="https://source.unsplash.com/featured/?warehouse" alt="Service 1" class="w-full h-40 object-cover rounded-md">
+                    <h3 class="text-xl font-semibold mt-2">Service 1</h3>
+                    <p>Description of Service 1.</p>
+                </div>
+                <div class="bg-gray-200 p-5 rounded shadow-md">
+                    <img src="https://source.unsplash.com/featured/?logistics" alt="Service 2" class="w-full h-40 object-cover rounded-md">
+                    <h3 class="text-xl font-semibold mt-2">Service 2</h3>
+                    <p>Description of Service 2.</p>
+                </div>
+                <div class="bg-gray-200 p-5 rounded shadow-md">
+                    <img src="https://source.unsplash.com/featured/?construction" alt="Service 3" class="w-full h-40 object-cover rounded-md">
+                    <h3 class="text-xl font-semibold mt-2">Service 3</h3>
+                    <p>Description of Service 3.</p>
+                </div>
+            </div>
+        </div>
     </section>
-    <section class="contact">
-        <h2>Contact Us</h2>
-        <form>
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Your Message" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
+
+    <!-- Gallery Section -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold">Gallery</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-8">
+                <div>
+                    <img src="https://source.unsplash.com/featured/?industrial,hall" alt="Gallery Image 1" class="rounded-lg shadow-md h-48 w-full object-cover">
+                </div>
+                <div>
+                    <img src="https://source.unsplash.com/featured/?warehouse" alt="Gallery Image 2" class="rounded-lg shadow-md h-48 w-full object-cover">
+                </div>
+                <div>
+                    <img src="https://source.unsplash.com/featured/?event" alt="Gallery Image 3" class="rounded-lg shadow-md h-48 w-full object-cover">
+                </div>
+            </div>
+        </div>
     </section>
 </body>
 </html>
